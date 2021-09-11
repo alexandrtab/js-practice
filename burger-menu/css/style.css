@@ -180,9 +180,6 @@ header {
     a {
         font-size: 10pt;
     }
-}
-
-@media (max-width: 460px) {
     .menu-container {
         position: absolute;
         top: 0;
