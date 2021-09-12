@@ -127,7 +127,7 @@ header {
     margin-right: 0;
 }
 
-.menu-item:hover {
+.menu-item a:hover {
     border-bottom: 1px solid white;
 }
 
@@ -147,7 +147,7 @@ header {
     height: 2px;
     left: 0;
     background-color: white;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .burger::before {
@@ -159,7 +159,7 @@ header {
 }
 
 .burger.burger-active {
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .burger-active.burger::before {
