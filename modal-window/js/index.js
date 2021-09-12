@@ -1,13 +1,15 @@
 const showModalWindow = document.querySelector('#btn'),
     modalWindow = document.querySelector(".modal-window-container"),
-    closeModalWindow = document.querySelector('.close-modal');
+    closeModalWindow = document.querySelector('.close-modal'),
+    modalBack = document.querySelector('.modal-back');
 showModalWindow.addEventListener('click', () => {
     modalWindow.classList.toggle('hidden');
 });
-closeModalWindow.addEventListener('click', (e) => {
+closeModalWindow.addEventListener('click', () => {
     modalWindow.classList.toggle('hidden');
-    if (e.target === modalWindow) {
-        modalWindow.classList.remove('hidden');
-    }
+
 
 });
+modalBack.addEventListener('click', () => {
+    modalWindow.classList.toggle("hidden");
+})
