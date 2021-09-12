@@ -7,9 +7,7 @@ showModalWindow.addEventListener('click', () => {
 });
 closeModalWindow.addEventListener('click', () => {
     modalWindow.classList.toggle('hidden');
-
-
 });
 modalBack.addEventListener('click', () => {
     modalWindow.classList.toggle("hidden");
-})
+});
