@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(230, 230, 230);
+}
+
+.container {
+    max-width: 100%;
+    min-height: 100vh;
+    padding: 0 1em;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.show {
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+    color: white;
+    font-size: 15pt;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.promotion__timer {
+    width: 50%;
+}
+
+.promotion__timer .title {
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    font-size: 20pt;
+}
+
+.promotion__timer .timer {
+    margin-top: 60px;
+    padding-left: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.promotion__timer .timer__block {
+    width: 102px;
+    height: 120px;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    color: black;
+    border-radius: 15px;
+}
+
+.promotion__timer .timer__block span {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 56px;
+    font-weight: 700;
+    color: black;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://cdn.wallpapersafari.com/82/18/QvulKG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
