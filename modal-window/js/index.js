@@ -1,11 +1,11 @@
-const showModalWindow = document.querySelector('#btn'),
+const showModalBtn = document.querySelector('#btn'),
     modalWindow = document.querySelector(".modal-window-container"),
-    closeModalWindow = document.querySelector('.close-modal'),
+    closeModalBtn = document.querySelector('.close-modal'),
     modalBack = document.querySelector('.modal-back');
-showModalWindow.addEventListener('click', () => {
+showModalBtn.addEventListener('click', () => {
     modalWindow.classList.toggle('hidden');
 });
-closeModalWindow.addEventListener('click', () => {
+closeModalBtn.addEventListener('click', () => {
     modalWindow.classList.toggle('hidden');
 });
 modalBack.addEventListener('click', () => {
