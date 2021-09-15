@@ -3,14 +3,14 @@ function timer() {
     const deadline = '2021-12-12';
 
     function getTimeRemaining(endtime) {
-        const t = Date.parse(endtime) - Date.parse(new Date()),
-            days = Math.floor((t / (1000 * 60 * 60 * 24))),
-            seconds = Math.floor((t / 1000) % 60),
-            minutes = Math.floor((t / 1000 / 60) % 60),
-            hours = Math.floor((t / (1000 * 60 * 60) % 24));
+        const totalTime = Date.parse(endtime) - Date.parse(new Date()),
+            days = Math.floor((totalTime / (1000 * 60 * 60 * 24))),
+            seconds = Math.floor((totalTime / 1000) % 60),
+            minutes = Math.floor((totalTime / 1000 / 60) % 60),
+            hours = Math.floor((totalTime / (1000 * 60 * 60) % 24));
 
         return {
-            'total': t,
+            'total': totalTime,
             'days': days,
             'hours': hours,
             'minutes': minutes,
@@ -38,14 +38,14 @@ function timer() {
         updateClock();
 
         function updateClock() {
-            const t = getTimeRemaining(endtime);
+            const totalTime = getTimeRemaining(endtime);
 
-            days.innerHTML = getZero(t.days);
-            hours.innerHTML = getZero(t.hours);
-            minutes.innerHTML = getZero(t.minutes);
-            seconds.innerHTML = getZero(t.seconds);
+            days.innerHTML = getZero(totalTime.days);
+            hours.innerHTML = getZero(totalTime.hours);
+            minutes.innerHTML = getZero(totalTime.minutes);
+            seconds.innerHTML = getZero(totalTime.seconds);
 
-            if (t.total <= 0) {
+            if (totalTime.total <= 0) {
                 clearInterval(timeInterval);
             }
         }
