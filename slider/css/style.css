@@ -25,8 +25,9 @@ body {
     display: none !important;
 }
 
-.show {
-    display: block;
+.active {
+    display: flex !important;
+    justify-content: space-evenly;
 }
 
 ul {
@@ -67,6 +68,10 @@ main {
     margin-bottom: 30px;
 }
 
+.slide {
+    display: none;
+}
+
 .info {
     width: 250px;
     display: flex;
@@ -82,7 +87,7 @@ main {
     padding: 6px;
 }
 
-.left-arrow {
+.left-arrow-img {
     transform: rotate(180deg);
 }
 
