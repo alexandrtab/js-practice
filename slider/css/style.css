@@ -28,6 +28,8 @@ body {
 .active {
     display: flex !important;
     justify-content: space-evenly;
+    align-items: center;
+
 }
 
 ul {
@@ -59,7 +61,7 @@ main {
 
 .slider {
     height: 90vh;
-    max-width: 1000px;
+    width: 1100px;
     padding: 20px;
     background-color: rgb(66, 66, 66);
     display: flex;
@@ -70,13 +72,17 @@ main {
 
 .slide {
     display: none;
+    width:90%;
 }
 
 .info {
-    width: 250px;
+    width: 310px;
     display: flex;
     flex-direction: column;
     color: white;
+}
+.title{
+    margin-bottom:10px;
 }
 
 .arrows {
@@ -85,6 +91,7 @@ main {
     border-radius: 50%;
     background-color: white;
     padding: 6px;
+    cursor: pointer
 }
 
 .left-arrow-img {
@@ -92,5 +99,6 @@ main {
 }
 
 .slide-img {
-    width: 40%;
+    width: auto;
+height:300px
 }
