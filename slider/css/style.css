@@ -29,7 +29,6 @@ body {
     display: flex !important;
     justify-content: space-evenly;
     align-items: center;
-
 }
 
 ul {
@@ -59,20 +58,26 @@ main {
     background-color: rgb(255, 255, 255);
 }
 
-.slider {
-    height: 90vh;
-    width: 1100px;
-    padding: 20px;
-    background-color: rgb(66, 66, 66);
+.slider-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
 }
 
+.slider {
+    height: 90vh;
+    width: 1100px;
+    padding: 20px;
+    background-color: rgb(66, 66, 66);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .slide {
     display: none;
-    width:90%;
+    width: 90%;
 }
 
 .info {
@@ -81,8 +86,9 @@ main {
     flex-direction: column;
     color: white;
 }
-.title{
-    margin-bottom:10px;
+
+.title {
+    margin-bottom: 10px;
 }
 
 .arrows {
@@ -91,7 +97,7 @@ main {
     border-radius: 50%;
     background-color: white;
     padding: 6px;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .left-arrow-img {
@@ -100,5 +106,22 @@ main {
 
 .slide-img {
     width: auto;
-height:300px
+    height: 300px;
+}
+
+.circle-counter {
+    display: flex;
+    justify-content: center;
+}
+
+.circle {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: gray;
+    margin-right: 2px;
+}
+
+.circle-active {
+    background-color: white;
 }
